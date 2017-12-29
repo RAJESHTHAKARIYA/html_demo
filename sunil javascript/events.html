@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+var x="document.getElementById('d1')";
+function over()
+{
+eval(x).style.backgroundColor="#123456";	
+}
+
+function out()
+{
+eval(x).style.backgroundColor="#007fff";	
+eval(x).style.color="";	
+
+}
+
+function move()
+{
+eval(x).style.color="red";	
+}
+
+function press(e)
+{
+//if((e.keyCode<48 || e.keyCode>57) &&  e.keyCode!=8)
+//{
+//return false;
+//}
+}
+</script>
+</head>
+
+<body onunload="alert('scroll');">
+<center>
+<div id="d1" style="height:200px;width:200px;background-color:#007fff;" onclick="over()" ondblclick="out()" onmousemove="move()">
+Hello india..........................
+</div>
+
+<br>
+<input type="text" id="t1" onkeypress="press(event)" />
+<input type="text" id="t2"  />
+
+</center>
+</body>
+
+</html>

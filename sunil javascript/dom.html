@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+#s1
+{
+color:#007fff;
+border:2px solid red;
+display:none;
+width:400px;
+}
+</style>
+</head>
+<body>
+<input type="text" id="t1" />
+<span id="s1">span</span>
+<br>
+<input type="button" value="click me" id="btn1" onclick="click1(this.value)" />
+<script>
+function click1(e)
+{
+alert(e);
+var x=document.getElementById("t1").value;
+if(x=="")
+{
+document.getElementById('s1').style.display="block";
+document.getElementById("s1").style.color="red";
+document.getElementById("s1").innerHTML="Field Required";
+}
+}
+
+</script>
+
+</body>
+<html>
